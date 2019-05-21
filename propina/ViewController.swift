@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var value1: Double = 0.0
     var value2: Double = 0.0
     var total: Double = 0.0
+    var realTotal: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +48,11 @@ class ViewController: UIViewController {
         
         value1 = (data1 as NSString).doubleValue
         value2 = (data2 as NSString).doubleValue
-        
-        total = value1 + value2
-        print("total pedorro = \(total)")
+        var tip = value2 / 100
+        total = value1 * tip
+        realTotal = value1 + total
+        lblTip.text = "$" + String(total)
+        lblTotalWithTip.text = "$" + String(realTotal)
     }
     
     private func alertShowError(withMessage message: String, withTitleAction titleAction: String) {
