@@ -47,9 +47,10 @@ class ViewController: UIViewController {
         
         value1 = (data1 as NSString).doubleValue
         value2 = (data2 as NSString).doubleValue
-        
-        total = value1 + value2
-        print("total pedorro = \(total)")
+        var tip = value2 / 100
+        total = value1 + tip
+        lblTip.text = "$" + String(tip)
+        lblTotalWithTip.text = "$" + String(total)
     }
     
     private func alertShowError(withMessage message: String, withTitleAction titleAction: String) {
