@@ -31,26 +31,48 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Propina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-PC-LqJ">
-                                <rect key="frame" x="20" y="391" width="148" height="21"/>
+                                <rect key="frame" x="20" y="527" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total con propina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-Sz-mgV">
-                                <rect key="frame" x="246" y="391" width="148" height="21"/>
+                                <rect key="frame" x="246" y="527" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entre Cuantos?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8y-bf-G5Q">
+                                <rect key="frame" x="20" y="290" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jf0-nn-pIC">
+                                <rect key="frame" x="114" y="386" width="187" height="60"/>
+                                <color key="backgroundColor" red="0.3577404126" green="0.47570145990000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="czo-Pe-CVX"/>
+                                </constraints>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CbT-ew-F96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Hg-pT-2OP"/>
                             <constraint firstItem="D5t-2y-dF2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="3bS-fH-FCs"/>
                             <constraint firstItem="D5t-2y-dF2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="4xy-ji-Wg6"/>
+                            <constraint firstItem="q8y-bf-G5Q" firstAttribute="top" secondItem="CbT-ew-F96" secondAttribute="bottom" constant="58" id="Y10-hR-yaX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jf0-nn-pIC" secondAttribute="trailing" constant="113" id="aM2-7l-boF"/>
+                            <constraint firstItem="Jf0-nn-pIC" firstAttribute="top" secondItem="q8y-bf-G5Q" secondAttribute="bottom" constant="66" id="bj0-Qk-z8h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CbT-ew-F96" secondAttribute="trailing" constant="20" id="eb6-Xy-tCS"/>
+                            <constraint firstItem="q8y-bf-G5Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ejc-X0-ccr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q8y-bf-G5Q" secondAttribute="trailing" constant="20" id="jjv-EH-IOe"/>
+                            <constraint firstItem="Jf0-nn-pIC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="jv9-QX-bkB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5t-2y-dF2" secondAttribute="trailing" constant="52" id="nuE-WI-4FK"/>
                             <constraint firstItem="CbT-ew-F96" firstAttribute="top" secondItem="D5t-2y-dF2" secondAttribute="bottom" constant="82" id="yYF-Qy-GXF"/>
                         </constraints>
