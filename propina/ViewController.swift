@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var txfTotal: UITextField!
+    @IBOutlet weak var btnAction: UIButton!
+    @IBOutlet weak var txfHowMany: UITextField!
+    @IBOutlet weak var lblTip: UILabel!
+    @IBOutlet weak var lblTotalWithTip: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
